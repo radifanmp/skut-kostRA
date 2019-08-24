@@ -18,6 +18,9 @@ const AuthController = require('./controllers/auth')
 const {authenticated} = require('./middleware')
 
 
+app.get('/',(req,res)=>{
+    res.send('RestApi Sukses')
+})
 
 
 app.group("/api/v1", (router) => {
