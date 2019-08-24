@@ -39,19 +39,19 @@ module.exports = {
         type: Sequelize.TEXT
       },
       wc: {
-        type: Sequelize.TINYINT
+        type: Sequelize.BOOLEAN
       },
       wifi: {
-        type: Sequelize.TINYINT
+        type: Sequelize.BOOLEAN
       },
       keyRoom: {
-        type: Sequelize.TINYINT
+        type: Sequelize.BOOLEAN
       },
       bed: {
-        type: Sequelize.TINYINT
+        type: Sequelize.BOOLEAN
       },
       electric: {
-        type: Sequelize.TINYINT
+        type: Sequelize.BOOLEAN
       },
       province: {
         type: Sequelize.STRING
