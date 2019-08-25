@@ -14,15 +14,6 @@ exports.show = (req, res) => {
     }).then(data => res.send(data))
 }
 
-exports.store = (req, res) => {
-    User.create(req.body).then(data => {
-        res.send({
-            message: "Berhasil",
-            data
-        })
-    })
-}
-
 exports.patch = (req, res) => {
     User.update(
         req.body, {
@@ -30,7 +21,7 @@ exports.patch = (req, res) => {
         }
     ).then(data => {
         res.send({
-            message: "Berhasil"
+            message: "Success"
         })
     })
 }
@@ -38,7 +29,7 @@ exports.patch = (req, res) => {
 exports.delete = (req, res) => {
     User.destroy({ where: {id: req.params.id}}).then(data => {
         res.send({
-            message: "Berhasil"
+            message: "Success"
         })
     })
 }

@@ -27,11 +27,11 @@ app.group("/api/v1", (router) => {
 
     //Auth API
     router.post('/login', AuthController.login)
+    router.post('/register', AuthController.register)
 
     //Users API
     router.get('/users', authenticated, UserController.index) //auth
     router.get('/user/:id', authenticated, UserController.show) //auth
-    router.post('/user', UserController.store)
     router.patch('/user/:id', authenticated, UserController.patch) //auth
     router.delete('/user/:id', authenticated, UserController.delete) //auth
 
