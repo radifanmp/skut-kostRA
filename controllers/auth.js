@@ -17,7 +17,7 @@ exports.login = (req, res) => {
       message:  "Please Inser Field Username & Password" 
     })
   }
-  User.findOne({ where: { username, password } }).then(user => {
+  User.findOne({ where: { username} }).then(user => {
 
     //Check Username Found or Not Found
     if (!user) {
@@ -47,7 +47,7 @@ exports.login = (req, res) => {
       error: true,
       message: `Error : ${err}`
     })
-  })
+   })
 
 }
 
